@@ -2,7 +2,7 @@
 const fetch = require('node-fetch');
 
 exports.handler = async (event, context) => {
-  const url = 'https://chiaanime.org' + event.path;
+  const url = 'https://animeheaven.me' + event.path;
   const response = await fetch(url);
   const body = await response.text();
 
